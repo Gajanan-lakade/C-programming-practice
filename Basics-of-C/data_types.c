@@ -9,8 +9,8 @@
 #include <stdio.h>
 
 // Main function: entry point of the program
-int main(void) {
-
+int main(void) 
+{
     // Variable declarations
     int age = 25;                 // Stores whole numbers (integers)
     float temperature = 36.5;     // Stores decimal numbers (single precision)
