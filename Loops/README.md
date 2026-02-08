@@ -6,7 +6,7 @@ Loops are used to execute a block of code repeatedly based on a condition.
 ## Programs Included
 
 - `for_loop.c`  
-  Demonstrates the use of a **for loop** to print numbers from 1 to 10.
+  Demonstrates the use of a **for loop** to print numbers from num to 1.
 
 - `while_loop.c`  
   Demonstrates the use of a **while loop** where the condition is checked before execution.
