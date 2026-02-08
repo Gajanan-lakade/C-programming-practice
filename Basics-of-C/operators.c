@@ -1,27 +1,34 @@
 /*
  Program: Operators in C
- Description: Demonstrates arithmetic, relational and logical operators
+ Description: Demonstrates arithmetic, relational, and logical operators
  Author: Gajanan Lakade
 */
 
+// Header file for input and output functions
 #include <stdio.h>
 
-int main(void) {
-    int a = 10, b = 5;
+// Main function: execution starts here
+int main(void) 
+{
+    // Variable declarations
+    int firstNumber = 10, secondNumber = 5;
 
-    /* Arithmetic Operators */
-    printf("Addition: %d\n", a + b); //Addition of two numbers
-    printf("Subtraction: %d\n", a - b); //Subtraction of two numbers
-    printf("Multiplication: %d\n", a * b); //Multiplication of two numbers
-    printf("Division: %d\n", a / b); //Division of two numbers
+    // Arithmetic Operators 
+    printf("Operation of Arithmetic Operators\n");
+    printf("Addition: %d\n", firstNumber + secondNumber);         // Addition of two numbers
+    printf("Subtraction: %d\n", firstNumber - secondNumber);      // Subtraction of two numbers
+    printf("Multiplication: %d\n", firstNumber * secondNumber);   // Multiplication of two numbers
+    printf("Division: %d\n", firstNumber / secondNumber);         // Division of two numbers
 
-    /* Relational Operators */
-    printf("a > b : %d\n", a > b);
-    printf("a == b : %d\n", a == b);
+// Relational Operators 
+printf("\nOperation of Relational Operators\n");
+printf("firstNumber > secondNumber: %d\n",firstNumber > secondNumber); // Comparing two values and printing the result: true (1) or false (0)
+printf("firstNumber == secondNumber: %d\n",firstNumber == secondNumber); // Comparing two values and printing the result: true (1) or false (0)
 
-    /* Logical Operators */
-    printf("(a > b && b > 0) : %d\n", (a > b && b > 0));
-    printf("(a < b || b > 0) : %d\n", (a < b || b > 0));
+// Logical Operators 
+printf("\nOperation of Logical Operators\n");
+printf("(firstNumber > secondNumber && secondNumber > 0): %d\n",(firstNumber > secondNumber && secondNumber > 0)); // Performing logical AND operation and printing result: true (1) or false (0)
+printf("(firstNumber < secondNumber || secondNumber > 0): %d\n",(firstNumber < secondNumber || secondNumber > 0)); // Performing logical OR operation and printing result: true (1) or false (0)
 
-    return 0;
+    return 0; // End of program
 }

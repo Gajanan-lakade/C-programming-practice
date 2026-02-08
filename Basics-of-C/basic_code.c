@@ -1,21 +1,23 @@
 /*
- Program: Hello World
- Description: First C program to print Hello World
- Author: Gajanan Lakade
+ Program: WAP to print a statement
+ Description: First C program to print "Hello World!"
+ Author: Gajanan Bharat Lakade
 */
 
-// For single line comment we can use two time forword slash.
+// Single-line comments use double forward slashes (//)
 
-/* For multi line comment we can use 
-In first line forword slash with star and 
-In last line star with slash.
-*/
+/*
+ Multi-line comments start with /* and
+ end with */
 
-//Header 
+// Header file for input and output functions
 #include <stdio.h>
 
-//Main function or starting of progaram
-int main(void) {
-    printf("Hello, World!\n"); //Printing a strings with the help of printf function(printf function is predefined).
-    return 0; //Returning zero to main function or end of function.
+// Main function: execution starts here
+int main(void)
+{
+    // Printing a string using the predefined printf() function
+    printf("Hello World!\n");
+
+    return 0;// End of program
 }
