@@ -1,0 +1,42 @@
+# Workflow name (visible in GitHub Actions tab)
+name: Build C Programs
+
+# When should this workflow run?
+on:
+  # Run when code is pushed to main branch
+  push:
+    branches: [ "main" ]
+
+  # Run when pull request is created for main branch
+  pull_request:
+    branches: [ "main" ]
+
+# Jobs define what the workflow actually does
+jobs:
+  build:
+    # Use latest Ubuntu virtual machine
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Download your repository code
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Install GCC compiler (usually pre-installed, but safe practice)
+      - name: Install GCC
+        run: sudo apt-get install -y gcc
+
+      # Step 3: Compile all C files in all folders
+      - name: Compile All C Programs
+        run: |
+          echo "Compiling all C files..."
+          
+          # Find every .c file inside repository
+          for file in $(find . -name "*.c")
+          do
+            echo "Compiling $file"
+            gcc "$file" -o "$file.out"
+          done
+
+          echo "All files compiled successfully!"
+
